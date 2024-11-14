@@ -7,7 +7,7 @@ import User from "./User";
 function Tweet({ tweet }) {
 
   const {
-    user: { name, image: IMAGE_URL, handle },
+    user: { USER_NAME, image: IMAGE_URL, USER_HANDLE },
     timestamp,
     message
   } = tweet;
@@ -18,7 +18,7 @@ function Tweet({ tweet }) {
 
       <div className="body">
         <div className="top">
-          <User name={name} handle={handle}></User>
+          <User name={USER_NAME} handle={USER_HANDLE}></User>
           <Timestamp timestamp={timestamp}></Timestamp>
         </div>
         <Message message={message}></Message>

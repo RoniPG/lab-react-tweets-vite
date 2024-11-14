@@ -4,23 +4,23 @@ import ProfileImage from "./ProfileImage";
 import Timestamp from "./Timestamp";
 import User from "./User";
 
-function Tweet({tweet}) {
+function Tweet({ tweet }) {
 
   const {
-    user: {name, image, handle},
+    user: { name, image: IMAGE_URL, handle },
     timestamp,
     message
   } = tweet;
-  
+
   return (
     <div className="tweet">
-      <ProfileImage image={image}></ProfileImage>
+      <ProfileImage image={IMAGE_URL}></ProfileImage>
 
       <div className="body">
-      <div className="top">
-        <User name={name} handle={handle}></User>
-        <Timestamp timestamp={timestamp}></Timestamp>
-      </div>
+        <div className="top">
+          <User name={name} handle={handle}></User>
+          <Timestamp timestamp={timestamp}></Timestamp>
+        </div>
         <Message message={message}></Message>
         <Actions></Actions>
       </div>
@@ -31,4 +31,3 @@ function Tweet({tweet}) {
 }
 
 export default Tweet;
- 

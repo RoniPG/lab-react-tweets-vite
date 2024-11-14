@@ -1,12 +1,12 @@
 
-function ProfileImage({image}) {
+function ProfileImage({ IMAGE_URL }) {
     return (
-            <img
-                src={image}
-                className="profile"
-                alt="profile"
-            />
+        <img
+            src={IMAGE_URL}
+            className="profile"
+            alt="profile"
+        />
     );
 }
 
-            export default ProfileImage;
+export default ProfileImage;

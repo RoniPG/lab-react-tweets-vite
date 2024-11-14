@@ -8,7 +8,7 @@ function Tweet({ tweet }) {
 
   const {
     user: { USER_NAME, image: IMAGE_URL, USER_HANDLE },
-    timestamp,
+    TWEET_TIMESTAMP,
     message
   } = tweet;
 
@@ -19,7 +19,7 @@ function Tweet({ tweet }) {
       <div className="body">
         <div className="top">
           <User name={USER_NAME} handle={USER_HANDLE}></User>
-          <Timestamp timestamp={timestamp}></Timestamp>
+          <Timestamp time={TWEET_TIMESTAMP}></Timestamp>
         </div>
         <Message message={message}></Message>
         <Actions></Actions>

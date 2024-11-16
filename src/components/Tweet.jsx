@@ -7,22 +7,22 @@ import User from "./User";
 function Tweet({ tweet }) {
 
   const {
-    user: { USER_NAME, image: IMAGE_URL, USER_HANDLE },
-    TWEET_TIMESTAMP,
-    TWEET_MESSAGE
+    user: { name: USER_NAME, image: IMAGE_URL, handle: USER_HANDLE },
+    timestamp: TWEET_TIMESTAMP,
+    message: TWEET_MESSAGE
   } = tweet;
-
+  
   return (
     <div className="tweet">
-      <ProfileImage image={IMAGE_URL}></ProfileImage>
+      <ProfileImage image={IMAGE_URL} />
 
       <div className="body">
         <div className="top">
-          <User name={USER_NAME} handle={USER_HANDLE}></User>
-          <Timestamp time={TWEET_TIMESTAMP}></Timestamp>
+          <User name={USER_NAME} handle={USER_HANDLE} />
+          <Timestamp time={TWEET_TIMESTAMP} />
         </div>
-        <Message message={TWEET_MESSAGE}></Message>
-        <Actions></Actions>
+        <Message message={TWEET_MESSAGE} />
+        <Actions />
       </div>
 
       <i className="fas fa-ellipsis-h"></i>

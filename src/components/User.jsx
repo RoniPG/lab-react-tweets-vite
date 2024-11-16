@@ -1,6 +1,6 @@
-function User({ name:USER_NAME, handle:USER_HANDLE }) {
-    console.log("USER_HANDLE:",USER_HANDLE );
-    
+function User({ name: USER_NAME, handle: USER_HANDLE }) {
+    console.log("USER_HANDLE:", USER_HANDLE);
+
     return (
         <span className="user">
             <span className="name">{USER_NAME}</span>

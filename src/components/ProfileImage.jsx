@@ -1,6 +1,6 @@
 
-function ProfileImage({ image:IMAGE_URL }) {
-    
+function ProfileImage({ image: IMAGE_URL }) {
+
     return (
         <img
             src={IMAGE_URL}

@@ -11,7 +11,7 @@ function Tweet({ tweet }) {
     timestamp: TWEET_TIMESTAMP,
     message: TWEET_MESSAGE
   } = tweet;
-  
+
   return (
     <div className="tweet">
       <ProfileImage image={IMAGE_URL} />
